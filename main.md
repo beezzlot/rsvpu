@@ -117,25 +117,16 @@ cryptlvm2 /dev/sdc /etc/secretkey luks
     vesr# show ip nat translations
 ```
 ```
-
-       vesr(config)#  ip dhcp-server - включили DHCP
-       vesr(config)# ip dhcp-server  pool LOCAL - создали пул
-       vesr(config-dhcp-server)#  network 10.10.2.0/24
-       vesr(config-dhcp-server)#  address-range 10.10.2.2-10.10.2.10
-       vesr(config-dhcp-server)# domain-name digital.skills
-       vesr(config-dhcp-server)# default-router 10.10.2.1
-       vesr(config-dhcp-server)# dns-server 10.113.38.100
-       vesr(config)#  object-group service dhcp_server
-       vesr(config-object-group)# port-range 67
-       vesr(config)#  object-group service dhcp_client
-       vesr(config-object-group)# port-range 68
-       vesr(config)# security zone-pair TRUST self
-       vesr(config-zone-pair)# rule 30
-       vesr(config-zone-pair)# match protocol udp
-       vesr(config-zone-pair)# match source-port dhcp_client
-       vesr(config-zone-pair)# match destination-port dhcp_server
-       vesr(config-zone-pair)# action permit
-       vesr(config-zone-pair)# enable
+config t
+ip dhcp-server
+ip dhcp-server pool CLI
+(config-dhcp) network 10.0.10.32/27
+(config-dhcp) domain-name company.prof
+(config-dhcp) address-range 10.0.10.45-10.0.10.50
+(config-dhcp) default-router 10.0.10.33
+(dns-server) 10.0.10.10,10.0.20.10
+(dhcp-server) end
+   
 ```
 
 ```
