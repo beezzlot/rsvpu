@@ -176,6 +176,10 @@ FreeIPA
 
 
 # IPSEC Eltex
+
+Читать снизу вверх
+
+![30](https://github.com/beezzlot/rsvpu/assets/57652313/69e55d3d-515d-45f7-aef7-d1c3753f87e9)
 ![29](https://github.com/beezzlot/rsvpu/assets/57652313/720854c2-a94a-45d1-884e-7f31d6ba5815)
 ![28](https://github.com/beezzlot/rsvpu/assets/57652313/af5488e8-234c-4006-9749-a86817a6636c)
 ![27](https://github.com/beezzlot/rsvpu/assets/57652313/8e94eb4d-ded2-4156-a032-7e4e2ec341ad)
@@ -190,7 +194,7 @@ FreeIPA
 
 
 
-![30](https://github.com/beezzlot/rsvpu/assets/57652313/69e55d3d-515d-45f7-aef7-d1c3753f87e9)
+
 
 
 
