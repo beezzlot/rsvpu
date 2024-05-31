@@ -161,4 +161,15 @@ Ansible:
 ![21](https://github.com/beezzlot/rsvpu/assets/57652313/1d90d481-8253-4cc2-bdfa-10aa358b350a)
 
  
+FreeIPA
+
+
+Установим пакет freeipa-server при помощи команды apt-get install freeipa-server -y. После этого отключаем службу ahttpd, чтобы избежать конфликта между alterator-fbi и freeipa, командой systemctl stop ahttpd.service. 
+Создадим доменный контроллер на SRV-HQ при помощи команды ipa-server-install.
+
+
+На CLI-HQ установим пакет freeipa-client при помощи команды apt-get update && apt-get install freeipa-client -y.
+ Запустим скрипт интерактивного добавления клиента при помощи команды ipa-client-install --enable-dns-update.
+
+
 
