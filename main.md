@@ -152,5 +152,13 @@ ip dhcp-server pool CLI
     vesr(config-ospf-area)# exit
     vesr(config-ospf)# enable
     ```
-    
+
+ На маршрутизаторах RTR-HQ и RTR-BR создавать пользователей не нужно. Главное - включить на них SSH сервер командой ip ssh server.
+Распакуем архив командой tar xzvf esr-ansible-2021-06-11.tar.gz, перейдем в директорию esr-ansible командой cd esr-ansible/  и запустим скрипт установки командой python3 install.py.
+
+Ansible:
+
+![21](https://github.com/beezzlot/rsvpu/assets/57652313/1d90d481-8253-4cc2-bdfa-10aa358b350a)
+
+ 
 
